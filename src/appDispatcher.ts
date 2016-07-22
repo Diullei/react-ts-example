@@ -9,6 +9,7 @@ type TActionPayload = {
 
 class AppDispatcher extends Dispatcher<TActionPayload> {
     dispatch(action: TActionPayload = {}) {
+        console.log(action);
         super.dispatch(action);
     }
 }
